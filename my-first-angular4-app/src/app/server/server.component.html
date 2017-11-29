@@ -1,0 +1,15 @@
+<p>In server component html page!
+
+<app-my-component></app-my-component>
+
+<hr>
+
+
+</p>
+
+<p [innerText]  = "allowAddingComponent"></p>
+<button class = "btn btn-primary" [disabled] = "!allowAddingComponent" (click)="setStatus()" >
+    Add Component </button>
+
+
+    {{ status }}
